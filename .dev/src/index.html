@@ -1,0 +1,640 @@
+<include src="./html/header.html"></include>
+
+<body class="page--home">
+	<include src="./html/nav.html"></include>
+
+	<main>
+		<section class="container-default" id="">
+			<div class="holder container-grid" id="startPage">
+				<div class="holder__img">
+					<img src="./assets/img-ini.png" alt="" />
+				</div>
+				<div class="holder__infos">
+					<h1 class="holder__title"><b>Qual mate </b><br>combina com você?</h1>
+					<p class="holder__text">
+						O cardápio do Rei do Mate é enorme e cheio de delícias. Quem conhece a gente até pode ter seus sabores
+						favoritos. Quem ainda não conhece bem, costuma ficar na dúvida do que escolher. Então, se você quer
+						experimentar algo novo e descobrir o que mais <br>agrada o seu paladar, é hora de fazer o nosso quiz!
+						<br>
+						<br>
+						Depois de responder a essas perguntinhas, você ajuda a gente a conhecer um pouquinho mais sobre o nosso
+						público e, de quebra, descobre qual mate combina mais com você. Aí, é só correr para a loja mais próxima e
+						fazer seu pedido.
+						<br> <br>
+						Então, sem mais demora, vamos lá? Seja sincero<br> e marque suas preferências nesse questionário, para
+						depois <br>
+						conferir o que temos para te sugerir!
+					</p>
+
+					<div class="holder__btn">
+						<buttton class="button" id="startBtn">responda agora</buttton>
+					</div>
+				</div>
+			</div>
+			<div class="questions" id="questions">
+				<div class="questions__container container-grid" id="question-1">
+					<div class="questions__holder">
+						<div class="questions__item">
+							<h3 class="questions__number">01</h3>
+							<h2 class="questions__title">
+								Qual tipo de livro você mais gosta de ler enquanto aprecia um bom mate?
+							</h2>
+							<ul class="questions__list">
+								<li>
+									<button class="d-flex questions__option" id="first">
+										<div class="alternativa">a</div>
+										<p class="texto">Clássicos da literatura brasileira.
+										</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="second">
+										<div class="alternativa">b</div>
+										<p class="texto">Best-sellers e livros contemporâneos.</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="third">
+										<div class="alternativa">c</div>
+										<p class="texto">Autobiografias de personalidades mundiais.
+										</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="fourth">
+										<div class="alternativa">d</div>
+										<p class="texto">Não ficção e autodesenvolvimento.
+										</p>
+									</button>
+								</li>
+							</ul>
+						</div>
+						<div class="pagination">
+							<ul class="pagination__list">
+								<li class="active"></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+							<div class="button-reset"><button class="button-underlined" id="reset">reiniciar quiz</button></div>
+						</div>
+					</div>
+					<div class="questions__img"><img src="./assets/Image-1.png" alt="" /></div>
+				</div>
+				<div class="questions__container container-grid" id="question-2">
+					<div class="questions__holder">
+						<div class="questions__item">
+							<h3 class="questions__number">02</h3>
+							<h2 class="questions__title"> Como você prefere seu chá-mate?
+							</h2>
+							<ul class="questions__list">
+								<li>
+									<button class="d-flex questions__option" id="first">
+										<div class="alternativa">a</div>
+										<p class="texto"> Quente, sempre!
+										</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="second">
+										<div class="alternativa">b</div>
+										<p class="texto"> Gelado, especialmente em dias de verão.
+										</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="third">
+										<div class="alternativa">c</div>
+										<p class="texto"> Nem muito quente e nem muito gelado.
+										</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="fourth">
+										<div class="alternativa">d</div>
+										<p class="texto"> Ambos, depende do meu estado de espírito.
+										</p>
+									</button>
+								</li>
+							</ul>
+						</div>
+						<div class="pagination">
+							<div class="button-reset" id="prev">
+								<button class="button-underlined"><img src="./assets/seta.svg" alt="" /> voltar</button>
+							</div>
+							<ul class="pagination__list">
+								<li class="active"></li>
+								<li class="active"></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+							<div class="button-reset"><button class="button-underlined" id="reset">reiniciar quiz</button></div>
+						</div>
+					</div>
+					<div class="questions__img"><img src="./assets/Image-8.png" alt="" /></div>
+				</div>
+				<div class="questions__container container-grid" id="question-3">
+					<div class="questions__holder">
+						<div class="questions__item">
+							<h3 class="questions__number">03</h3>
+							<h2 class="questions__title">Qual é a sua estação do ano preferida?
+							</h2>
+							<ul class="questions__list">
+								<li>
+									<button class="d-flex questions__option" id="first">
+										<div class="alternativa">a</div>
+										<p class="texto">Outono</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="second">
+										<div class="alternativa">b</div>
+										<p class="texto">Verão</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="third">
+										<div class="alternativa">c</div>
+										<p class="texto">Primavera</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="fourth">
+										<div class="alternativa">d</div>
+										<p class="texto">Inverno</p>
+									</button>
+								</li>
+							</ul>
+						</div>
+						<div class="pagination">
+							<div class="button-reset" id="prev">
+								<button class="button-underlined"><img src="./assets/seta.svg" alt="" /> voltar</button>
+							</div>
+							<ul class="pagination__list">
+								<li class="active"></li>
+								<li class="active"></li>
+								<li class="active"></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+							<div class="button-reset"><button class="button-underlined" id="reset">reiniciar quiz</button></div>
+						</div>
+					</div>
+					<div class="questions__img"><img src="./assets/Image-7.png" alt="" /></div>
+				</div>
+				<div class="questions__container container-grid" id="question-4">
+					<div class="questions__holder">
+						<div class="questions__item">
+							<h3 class="questions__number">04</h3>
+							<h2 class="questions__title"> Qual tipo de lanche você mais gosta de comer enquanto toma um mate?
+							</h2>
+							<ul class="questions__list">
+								<li>
+									<button class="d-flex questions__option" id="first">
+										<div class="alternativa">a</div>
+										<p class="texto"> Pão de queijo, não tem erro.
+										</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="second">
+										<div class="alternativa">b</div>
+										<p class="texto"> Uma porção de coxinhas bem suculentas.
+										</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="third">
+										<div class="alternativa">c</div>
+										<p class="texto"> Nada, prefiro só a bebida mesmo.
+										</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="fourth">
+										<div class="alternativa">d</div>
+										<p class="texto"> Algo doce, para misturar os sabores.
+										</p>
+									</button>
+								</li>
+							</ul>
+						</div>
+						<div class="pagination">
+							<div class="button-reset" id="prev">
+								<button class="button-underlined"><img src="./assets/seta.svg" alt="" /> voltar</button>
+							</div>
+							<ul class="pagination__list">
+								<li class="active"></li>
+								<li class="active"></li>
+								<li class="active"></li>
+								<li class="active"></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+							<div class="button-reset"><button class="button-underlined" id="reset">reiniciar quiz</button></div>
+						</div>
+					</div>
+					<div class="questions__img"><img src="./assets/Image-6.png" alt="" /></div>
+				</div>
+				<div class="questions__container container-grid" id="question-5">
+					<div class="questions__holder">
+						<div class="questions__item">
+							<h3 class="questions__number">05</h3>
+							<h2 class="questions__title"></b>Onde você mais gosta de tomar seu mate?
+							</h2>
+							<ul class="questions__list">
+								<li>
+									<button class="d-flex questions__option" id="first">
+										<div class="alternativa">a</div>
+										<p class="texto"> Em uma loja aconchegante do Rei do Mate.
+										</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="second">
+										<div class="alternativa">b</div>
+										<p class="texto"> Enquanto bato perna no shopping, passeando pelas lojas.
+										</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="third">
+										<div class="alternativa">c</div>
+										<p class="texto"> Ao ar livre, em uma praça ou em um parque.
+										</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="fourth">
+										<div class="alternativa">d</div>
+										<p class="texto"> Em qualquer lugar, o importante é estar com um mate delicioso em mãos.
+										</p>
+									</button>
+								</li>
+							</ul>
+						</div>
+						<div class="pagination">
+							<div class="button-reset" id="prev">
+								<button class="button-underlined"><img src="./assets/seta.svg" alt="" /> voltar</button>
+							</div>
+							<ul class="pagination__list">
+								<li class="active"></li>
+								<li class="active"></li>
+								<li class="active"></li>
+								<li class="active"></li>
+								<li class="active"></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+							<div class="button-reset"><button class="button-underlined" id="reset">reiniciar quiz</button></div>
+						</div>
+					</div>
+					<div class="questions__img"><img src="./assets/Image-5.png" alt="" /></div>
+				</div>
+				<div class="questions__container container-grid" id="question-6">
+					<div class="questions__holder">
+						<div class="questions__item">
+							<h3 class="questions__number">06</h3>
+							<h2 class="questions__title">Como você classifica seu estilo pessoal?</h2>
+							<ul class="questions__list">
+								<li>
+									<button class="d-flex questions__option" id="first">
+										<div class="alternativa">a</div>
+										<p class="texto"> Básico e tradicional, sem perder muito tempo na hora da produção.
+										</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="second">
+										<div class="alternativa">b</div>
+										<p class="texto"> Casual, mas sempre com um toque especial para sair do comum.
+										</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="third">
+										<div class="alternativa">c</div>
+										<p class="texto"> Despreocupado, com as peças favoritas sempre no corpo.
+										</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="fourth">
+										<div class="alternativa">d</div>
+										<p class="texto"> Moderno e sempre de acordo com as últimas tendências.
+										</p>
+									</button>
+								</li>
+							</ul>
+						</div>
+						<div class="pagination">
+							<div class="button-reset" id="prev">
+								<button class="button-underlined"><img src="./assets/seta.svg" alt="" /> voltar</button>
+							</div>
+							<ul class="pagination__list">
+								<li class="active"></li>
+								<li class="active"></li>
+								<li class="active"></li>
+								<li class="active"></li>
+								<li class="active"></li>
+								<li class="active"></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+							<div class="button-reset"><button class="button-underlined" id="reset">reiniciar quiz</button></div>
+						</div>
+					</div>
+					<div class="questions__img"><img src="./assets/Image-4.png " alt="" /></div>
+				</div>
+				<div class="questions__container container-grid" id="question-7">
+					<div class="questions__holder">
+						<div class="questions__item">
+							<h3 class="questions__number">07</h3>
+							<h2 class="questions__title"> Quem é você quando vai ao cinema?
+							</h2>
+							<ul class="questions__list">
+								<li>
+									<button class="d-flex questions__option" id="first">
+										<div class="alternativa">a</div>
+										<p class="texto"> A pessoa que sempre consulta a programação antes, para escolher o filme e
+											confirmar os horários.
+										</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="second">
+										<div class="alternativa">b</div>
+										<p class="texto"> Aquele que sempre se decide pelo filme mais diferente e inusitado que está em
+											cartaz.
+										</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="third">
+										<div class="alternativa">c</div>
+										<p class="texto"> Quem gosta de assistir aos filmes de um determinado ator, atriz ou diretor,
+											porque acompanha a carreira deles desde sempre.
+										</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="fourth">
+										<div class="alternativa">d</div>
+										<p class="texto"> O que está sempre atrasado e entra no cinema quando as luzes já se apagaram, sem
+											nem se lembrar qual é o título do filme.
+										</p>
+									</button>
+								</li>
+							</ul>
+						</div>
+						<div class="pagination">
+							<div class="button-reset" id="prev">
+								<button class="button-underlined"><img src="./assets/seta.svg" alt="" /> voltar</button>
+							</div>
+							<ul class="pagination__list">
+								<li class="active"></li>
+								<li class="active"></li>
+								<li class="active"></li>
+								<li class="active"></li>
+								<li class="active"></li>
+								<li class="active"></li>
+								<li class="active"></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+							<div class="button-reset"><button class="button-underlined" id="reset">reiniciar quiz</button></div>
+						</div>
+					</div>
+					<div class="questions__img"><img src="./assets/Image-3.png" alt="" /></div>
+				</div>
+				<div class="questions__container container-grid" id="question-8">
+					<div class="questions__holder">
+						<div class="questions__item">
+							<h3 class="questions__number">08</h3>
+							<h2 class="questions__title">Como você convidaria alguém para um primeiro encontro?
+							</h2>
+							<ul class="questions__list">
+								<li>
+									<button class="d-flex questions__option" id="first">
+										<div class="alternativa">a</div>
+										<p class="texto"> Chamaria para tomar um mate e conversar em um lugar bem tranquilo.
+										</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="second">
+										<div class="alternativa">b</div>
+										<p class="texto"> Escolheria um programa agitado, para que vocês se divertissem bastante.
+										</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="third">
+										<div class="alternativa">c</div>
+										<p class="texto"> Prepararia um jantar à luz de velas em um clima bem intimista.
+										</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="fourth">
+										<div class="alternativa">d</div>
+										<p class="texto"> Convidaria logo para algo mais radical, como uma trilha na natureza.
+										</p>
+									</button>
+								</li>
+							</ul>
+						</div>
+						<div class="pagination">
+							<div class="button-reset" id="prev">
+								<button class="button-underlined"><img src="./assets/seta.svg" alt="" /> voltar</button>
+							</div>
+							<ul class="pagination__list">
+								<li class="active"></li>
+								<li class="active"></li>
+								<li class="active"></li>
+								<li class="active"></li>
+								<li class="active"></li>
+								<li class="active"></li>
+
+								<li class="active"></li>
+								<li class="active"></li>
+								<li></li>
+								<li></li>
+							</ul>
+							<div class="button-reset"><button class="button-underlined" id="reset">reiniciar quiz</button></div>
+						</div>
+					</div>
+					<div class="questions__img"><img src="./assets/Image-3.png" alt="" /></div>
+				</div>
+				<div class="questions__container container-grid" id="question-9">
+					<div class="questions__holder">
+						<div class="questions__item">
+							<h3 class="questions__number">09</h3>
+							<h2 class="questions__title">E quando se trata de fazer escolhas, você...
+
+							</h2>
+							<ul class="questions__list">
+								<li>
+									<button class="d-flex questions__option" id="first">
+										<div class="alternativa">a</div>
+										<p class="texto"> vai direto ao ponto, porque sempre sabe o que é melhor.
+										</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="second">
+										<div class="alternativa">b</div>
+										<p class="texto"> gosta de se arriscar às vezes.
+										</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="third">
+										<div class="alternativa">c</div>
+										<p class="texto"> prefere um terreno seguro, mas vez ou outra surpreende na decisão.
+										</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="fourth">
+										<div class="alternativa">d</div>
+										<p class="texto"> muda de opinião toda hora, porque a vida é feita de momentos.
+										</p>
+									</button>
+								</li>
+							</ul>
+						</div>
+						<div class="pagination">
+							<div class="button-reset" id="prev">
+								<button class="button-underlined"><img src="./assets/seta.svg" alt="" /> voltar</button>
+							</div>
+							<ul class="pagination__list">
+								<li class="active"></li>
+								<li class="active"></li>
+								<li class="active"></li>
+								<li class="active"></li>
+								<li class="active"></li>
+								<li class="active"></li>
+								<li class="active"></li>
+								<li class="active"></li>
+								<li class="active"></li>
+								<li></li>
+							</ul>
+							<div class="button-reset"><button class="button-underlined" id="reset">reiniciar quiz</button></div>
+						</div>
+					</div>
+					<div class="questions__img"><img src="./assets/Image-3.png" alt="" /></div>
+				</div>
+				<div class="questions__container container-grid" id="question-10">
+					<div class="questions__holder">
+						<div class="questions__item">
+							<h3 class="questions__number">10</h3>
+							<h2 class="questions__title">Por último, mas não menos importante: com que frequência você toma um mate?
+							</h2>
+							<ul class="questions__list">
+								<li>
+									<button class="d-flex questions__option" id="first">
+										<div class="alternativa">a</div>
+										<p class="texto"> Todo dia, ou pelo menos algumas vezes por semana, porque é uma tradição pessoal.
+
+										</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="second">
+										<div class="alternativa">b</div>
+										<p class="texto"> Se a oportunidade aparecer, não dá para perder, mas geralmente se programa com
+											antecedência para ir até o Rei do Mate.
+										</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="third">
+										<div class="alternativa">c</div>
+										<p class="texto"> Vez ou outra, só para não perder o costume.
+										</p>
+									</button>
+								</li>
+								<li>
+									<button class="d-flex questions__option" id="fourth">
+										<div class="alternativa">d</div>
+										<p class="texto"> Quando a vontade surge, não pensa duas vezes antes de ir para o Rei do Mate.
+										</p>
+									</button>
+								</li>
+							</ul>
+						</div>
+						<div class="pagination">
+							<div class="button-reset" id="prev">
+								<button class="button-underlined"><img src="./assets/seta.svg" alt="" /> voltar</button>
+							</div>
+							<ul class="pagination__list">
+								<li class="active"></li>
+								<li class="active"></li>
+								<li class="active"></li>
+								<li class="active"></li>
+								<li class="active"></li>
+								<li class="active"></li>
+								<li class="active"></li>
+								<li class="active"></li>
+								<li class="active"></li>
+								<li class="active"></li>
+							</ul>
+							<div class="button-reset"><button class="button-underlined" id="reset">reiniciar quiz</button></div>
+						</div>
+					</div>
+					<div class="questions__img"><img src="./assets/Image-3.png" alt="" /></div>
+				</div>
+			</div>
+			<div class="results" id="results">
+				<div class="container-grid">
+					<div class="results__item">
+						<h1 class="results__title"></h1>
+						<p class="results__desc"></p>
+						<div class="holder__btn">
+							<a href="./" class="button">responda novamente</a>
+						</div>
+					</div>
+					<div class="results__img">
+						<img src="#" alt="" />
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="data" style="display: none">
+			<img src="./assets/marcante.png" alt="" />
+			<img src="./assets/inovar.png" alt="" />
+			<img src="./assets/tradicional.png" alt="" />
+			<img src="./assets/preferido.png" alt="" />
+		</div>
+	</main>
+
+	<include src="./html/footer.html"></include>
+</body>

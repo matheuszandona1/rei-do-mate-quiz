@@ -1,0 +1,115 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+	integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+	crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js
+"></script>
+<script>
+	let contagem = {
+		a: 0,
+		b: 0,
+		c: 0,
+		d: 0,
+	}
+
+	$("#startBtn").click(function () {
+		$(this).closest(".holder").hide()
+		$(".questions").find("#question-1")
+		$("#question-1").fadeIn().css("display", "flex")
+	})
+
+	let steps = 1
+
+	$(".questions__option").click(function () {
+		let id = $(this).attr("id")
+		let alternativa = $(this).find(".alternativa").text()
+		contagem[alternativa]++
+
+		removeCurrentStep()
+
+		if (steps < 10) {
+			steps++
+			showCurrentStep()
+
+			if (steps > 1) {
+				$(this).closest("#prev").css("display", "block")
+			}
+		} else {
+			showResults(maisSelecionada())
+		}
+	})
+
+	$("#prev button").click(function () {
+		removeCurrentStep()
+		steps--
+		showCurrentStep()
+	})
+
+	$(".button-reset #reset").click(function () {
+		resetSteps()
+	})
+
+	removeCurrentStep = function () {
+		$(`#question-${steps}`).hide()
+	}
+
+	showCurrentStep = function () {
+		$(`#question-${steps}`).fadeIn().css("display", "flex")
+	}
+
+	resetSteps = function () {
+		removeCurrentStep()
+		$(`#question-1`).fadeIn().css("display", "flex")
+		steps = 1
+	}
+
+	maisSelecionada = function () {
+		let max = 0
+		let maxKey = "a"
+		for (let key in contagem) {
+			if (contagem[key] > max) {
+				max = contagem[key]
+				maxKey = key
+			}
+		}
+		return maxKey
+	}
+
+	showResults = function (alternativa) {
+		// Você precisa mapear as alternativas 'a', 'b', 'c' e 'd' para as chaves correspondentes em 'dados'
+		let mapeamento = {
+			a: "airFryer",
+			b: "pipoqueira",
+			c: "churrasqueira",
+			d: "liquidificador",
+		}
+		let id = mapeamento[alternativa]
+
+		$(".results").show()
+		$(".results__title").text(dados[id].titulo)
+		$(".results__img img").attr("src", dados[id].imagem)
+		$(".results__desc").html(dados[id].desc)
+	}
+
+	dados = {
+		airFryer: {
+			titulo: "Se você marcou mais a letra A",
+			imagem: "/res/img/assets/tradicional.png",
+			desc: "Você é uma pessoa que gosta mais de <b>sabores tradicionais</b>. O conforto e a sensação de tomar uma bebida já conhecida não têm preço, e é por isso que você costuma sempre pedir a mesma coisa.<br><br> Logo, o <b>mate puro quente</b> provavelmente é o mais indicado para você. Se quiser tentar algo diferente, mas sem sair tanto do usual, peça para acrescentar leite ou canela e aprecie um novo sabor.",
+		},
+		pipoqueira: {
+			titulo: "Se você marcou mais a letra B",
+			imagem: "/res/img/assets/marcante.png",
+			desc: "Você é ousado e gosta de <b>sabores marcantes.</b> Por isso, o mate suíço é a pedida certa para você. Ele é batido com leite condensado, e a receita ainda permite que você escolha abacaxi, maracujá ou limão para complementar o sabor. <br><br> O <b>mate frescão</b>, batido com menta e uma fruta à sua escolha, é outra opção interessante e surpreendente para você. <br><br>Confira as frutas disponíveis no momento do pedido e acrescente a sua favorita pra deixar ainda mais a bebida com a sua cara.",
+		},
+		churrasqueira: {
+			titulo: "Se você marcou mais a letra C",
+			imagem: "/res/img/assets/preferido.png",
+			desc: "Você tem seus <b>sabores preferidos</b> e se mantém fiel a eles. Mas pode fugir um pouco do pedido de sempre, sem se arriscar demais. Por exemplo, o mate puro pode ser servido com guaraná, menta ou groselha. <br><br>O <b>mate gelado</b> batido co m leite também ajuda a refrescar e traz um toque especial para o sabor que você já conhece. A boa notícia é que você gosta, na mesma proporção, do mate gelado e quente, então a sua cartela de preferências é bem extensa.",
+		},
+		liquidificador: {
+			titulo: "Se você marcou mais a letra D",
+			imagem: "/res/img/assets/inovar.png",
+			desc: `Você adora <b>experimentar e inovar</b> nos sabores e nas texturas. Gosta tanto de testar coisas diferentes, que daqui a pouco nosso cardápio fica pequeno para você!<b> A bebida ideal para seu paladar é aquela que mistura tudo, mas sem perder a harmonia.</b><br><br> É o caso do <b>Mate Shake,</b> que leva mate batido com leite, sorvete de creme e uma cobertura de sua escolha. Ou ainda a Bomba Energética, que tem em sua composição, além do mate, açaí e guaraná.`,
+		},
+	}
+</script>
