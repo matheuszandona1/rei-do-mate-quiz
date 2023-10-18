@@ -292,6 +292,15 @@
 	.holder__btn {
 		text-align: start;
 		justify-content: start;
+		flex-wrap: wrap;
+		.texto {
+			margin: 0;
+			@include paragraph;
+			text-align: left;
+			width: 100%;
+			margin: 20px 0;
+			padding-left: 32px;
+		}
 	}
 	&__title {
 		@include option;
